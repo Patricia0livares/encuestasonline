@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "encuesta/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hola Encuestador,</h1>
+    <p class="lead">Bienvenido al Sistema de Encuestas Online</p>
+    <hr class="my-4">
+    <p>Selecciona para ingresar al sistema</p>
+    <p class="lead">
+      <a class="btn btn-primary" style="border-radius:0px;" href="encuestadorsignup" role="button">Registrate</a>
+      <a class="btn btn-success" style="border-radius:0px;" href="encuestadorlogin" role="button">Login</a>
+    </p>
+    <br><br><br><br><br><br>
+  </div>
+  {% include "encuesta/footer.html" %}
+</body>
+
+</html>

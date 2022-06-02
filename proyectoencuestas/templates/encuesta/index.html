@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron {
+    margin-bottom: 0px;
+  }
+
+  /* *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+} */
+</style>
+
+<body>
+  {% include "encuesta/navbar.html" %}
+  <br>
+  <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" style="background-color:#fff">
+    <div class="container text-center">
+      <h2 class="display-3 text-info">Encuestas Online</h2>
+      <p class="display-4 d-none d-sm-block">Realiza tus encuestas en línea</p>
+      <p class="lead">Registrate para gestionar tus encuestas</p>
+      <p><strong>Ingresa aquí:</strong></p>
+      <a href="/usuario/usuariosignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i
+          class="fa fa-user-circle"></i> Registrar</a>
+          <br><br>
+    </div>
+</section>
+  {% include "encuesta/footer.html" %}
+</body>
+
+</html>

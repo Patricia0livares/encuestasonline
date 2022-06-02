@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+</head>
+
+<body>
+
+  {% include "encuesta/navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Por favor llene el formulario para contactarnos</h3>
+
+    <form method="POST" autocomplete="off">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Enviar" class='btn btn-primary' style="border-radius: 0%;">
+      </div>
+    </form>
+  </center>
+  <br>
+  <br>
+  <br>
+  <br>
+  {% include "encuesta/footer.html" %}
+</body>
+
+</html>

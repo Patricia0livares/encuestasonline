@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+  <body>
+    {% include "encuesta/navbar.html" %}
+
+      <div class="jumbotron" style="margin-top: 0px;
+        margin-bottom: 0px;">
+        <h1 class="display-4">Hola {{request.user.first_name}},</h1>
+        <p class="lead">Tu cuenta aun no ha sido <b>ACTIVADA</b> ! <br><br>Pronto te habilitará el administrador <br><br>BIENVENIDO</p>
+        <hr class="my-4">
+       
+        <p class="lead">
+          <a class="btn btn-danger btn-lg" href="/logout" style="border-radius: 0%;" role="button">Salir</a>
+        </p>
+      </div>
+
+{% include "encuesta/footer.html" %}
+  </body>
+</html>
